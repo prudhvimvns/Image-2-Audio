@@ -42,7 +42,7 @@ def img2txt(url):
 # llm
 def generate_story(scenario):
     generator = pipeline('text-generation', model='gpt2')
-    story = generator(scenario, max_length=30, num_return_sequences=3)[0]["generated_text"]
+    story = generator(scenario, max_length=150, num_return_sequences=3)[0]["generated_text"]
     print(story)
     return story
 
@@ -66,10 +66,10 @@ def main():
     st.set_page_config(page_title="image 2 audio story", page_icon="🚀")
 
     col1, col2 = st.columns([1, 3])
-    
+
     col1.image(img, width=60, caption='MVNSP')
     st.header("PIC-TALK😀")
-    st.header("Turns image🌆 into audio🔉 story✨")
+    st.markdown("<h3>Turns Image🌆 to Text💬 and <span style='color: yellow;'>generate</span> Audio🔉 story✨</h3>", unsafe_allow_html=True)
     uploaded_file = st.file_uploader("Choose an image..", type="jpg")
 
     if uploaded_file is not None:
