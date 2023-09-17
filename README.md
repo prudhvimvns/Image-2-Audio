@@ -16,7 +16,7 @@ requests
 Installation:
 
 Clone the repository:
-git clone https://github.com/your-username/image-to-audio-story.git
+git clone https://github.com/prudhvimvns/Image-2-Audio
 Install the requirements:
 pip install -r requirements.txt
 Usage:
