@@ -1,46 +1,51 @@
-# Image-2-Audio
+# Image 2 Audio Story Generator 📸🔉✨
 
-This project turns an image into a text scenario and then generates an audio story based on that scenario.
+Welcome to the Image 2 Audio Story Generator! This Python script allows you to turn images into text and generate audio stories based on the image content. 🚀
 
-Requirements:
+## How it Works 🤖
 
-Python 3.7+
-torch
-transformers
-PIL
-dotenv
-jinja2
-streamlit
-numpy
-requests
-Installation:
+1. **Image to Text**: The script first converts the uploaded image into text using the [Salesforce/blip-image-captioning-base](https://huggingface.co/Salesforce/blip-image-captioning-base) model.
 
-Clone the repository:
-git clone https://github.com/prudhvimvns/Image-2-Audio
-Install the requirements:
-pip install -r requirements.txt
-Usage:
+2. **Generate Story**: It then generates a creative story based on the image content using the GPT-2 text generation model.
 
-Run the project:
-python main.py
-Upload an image and the project will generate an audio story based on the image.
-Example:
+3. **Text to Speech**: Finally, it converts the generated story into audio using the [espnet/kan-bayashi_ljspeech_vits](https://huggingface.co/espnet/kan-bayashi_ljspeech_vits) text-to-speech model.
 
-Upload the image pic1.jpg.
-The project will generate the following scenario:
-A beautiful cat is sitting on a windowsill, looking out at the city below.
-The project will then generate the following story:
-The cat's name is Luna and she loves to sit on the windowsill and watch the world go by. She sees people walking their dogs, children playing in the park, and cars driving down the street. Luna loves to imagine what all of these people are doing and where they are going.
+## Usage 📝
 
-One day, Luna sees a little girl crying on the sidewalk. Luna jumps down from the windowsill and runs over to the girl. She rubs against the girl's leg and purrs loudly. The girl stops crying and smiles at Luna.
+1. Clone this repository.
 
-"Thank you," the girl says. "You made me feel better."
+2. Install the required Python packages using `pip install -r requirements.txt`.
 
-Luna purrs even louder and rubs her head against the girl's hand. The girl picks up Luna and gives her a big hug.
+3. Run the script using `python main.py`.
 
-"I'm going to call you my new friend," the girl says. "Your name is Luna, right?"
+4. Upload an image, and the magic happens! 🪄
 
-Luna meows and licks the girl's face. She is so happy to have made a new friend.
+## Dependencies 🛠️
 
-The project will then generate an audio file of the story.
-You can listen to the audio file by clicking on the play button.
+- [PyTorch](https://pytorch.org/)
+- [transformers](https://huggingface.co/transformers/)
+- [Pillow (PIL)](https://pillow.readthedocs.io/en/stable/)
+- [dotenv](https://pypi.org/project/python-dotenv/)
+- [requests](https://docs.python-requests.org/en/latest/)
+- [jinja2](https://jinja.palletsprojects.com/en/3.0.x/)
+- [streamlit](https://streamlit.io/)
+
+## Configuration 🔧
+
+Make sure to set your [Hugging Face API Token](https://huggingface.co/docs/tokenization/authentication) in a `.env` file as `HUGGINGFACEHUB_API_TOKEN`.
+
+## Output 🎧
+
+The generated audio story will be saved as `audio.mp3`.
+
+## Credits 👏
+
+- Image to Text Model: [Salesforce/blip-image-captioning-base](https://huggingface.co/Salesforce/blip-image-captioning-base)
+- Text Generation Model: [GPT-2](https://huggingface.co/gpt2)
+- Text to Speech Model: [espnet/kan-bayashi_ljspeech_vits](https://huggingface.co/espnet/kan-bayashi_ljspeech_vits)
+
+## Author 📝
+
+- [[Prudhvi]](https://github.com/prudhvimvns)
+
+Happy Image to Audio Storytelling! 📚🎉
