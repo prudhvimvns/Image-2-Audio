@@ -32,7 +32,7 @@ Welcome to the Image 2 Audio Story Generator! This Python script allows you to t
 
 ## Configuration 🔧
 
-Make sure to set your [Hugging Face API Token](https://huggingface.co/docs/tokenization/authentication) in a `.env` file as `HUGGINGFACEHUB_API_TOKEN`.
+Make sure to set your [Hugging Face API Token](https://huggingface.co/docs/hub/security-tokens) in a `.env` file as `HUGGINGFACEHUB_API_TOKEN`.
 
 ## Output 🎧
 
