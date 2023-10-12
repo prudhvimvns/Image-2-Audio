@@ -5,3 +5,16 @@ PyMuPDF
 gradio
 python-poppler
 pytesseract
+
+torch
+PIL
+dotenv
+transformers
+requests
+jinja2
+numpy
+streamlit
+
+Salesforce/blip-image-captioning-base
+gpt2
+espnet/kan-bayashi_ljspeech_vits
