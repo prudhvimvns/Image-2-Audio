@@ -15,6 +15,6 @@ jinja2
 numpy
 streamlit
 
-Salesforce/blip-image-captioning-base
+# Salesforce/blip-image-captioning-base
 gpt2
-espnet/kan-bayashi_ljspeech_vits
+# espnet/kan-bayashi_ljspeech_vits
